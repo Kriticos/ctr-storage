@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "📁 Iniciando preparação do ambiente ctr-imgsrv..."
+echo "📁 Iniciando preparação do ambiente ctr-storage..."
 
 # Diretório onde o script está
 BASE_DIR="$(dirname "$(realpath "$0")")"

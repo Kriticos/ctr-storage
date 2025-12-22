@@ -1,5 +1,5 @@
 services:
-  ctr-img-DES:
+  ctr-storage-DES:
     image: nginx:alpine
     container_name: ${CONTAINER_NAME}
     restart: unless-stopped
