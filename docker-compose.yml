@@ -1,0 +1,24 @@
+services:
+  ctr-img-DES:
+    image: nginx:alpine
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+
+    volumes:
+      - ${VOL_IMG_STATIC}
+      - ${VOL_TZ}
+      - ${VOL_LOCALTIME}
+
+    ports:
+      - "6081:80"
+
+    networks:
+      network-share:
+        ipv4_address: ${IPV4_IMG}
+
+networks:
+  network-share:
+    external: true
+    ipam:
+      config:
+        - subnet: ${SUBNET}
