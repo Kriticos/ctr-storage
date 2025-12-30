@@ -4,12 +4,12 @@ Servico de storage estatico baseado em Nginx para servir arquivos da pasta `stor
 
 ## Requisitos
 
-- Docker
-- Docker Compose
+- [Docker e Docker Compose](https://docs.docker.com/engine/install/)
 
 ## Configuracao inicial
 
 1) Clone o repositorio.
+
 2) Dê permissao de execucao para o script e execute-o:
 
 ```bash
